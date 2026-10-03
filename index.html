@@ -394,25 +394,25 @@
     // 💡 CONTRÔLE INDIVIDUEL DE CHAQUE PRODUIT (zoom et position dans la grille)
     const products = [
       // PARURES
-      { id: 17, name: "Parure Tiffany And Co Acier Inoxydable", category: "parures", price: 3500, oldPrice: 4000, image: "parure1.jpeg",zoom:1.0, position: "center 66%", fallback: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=500&auto=format&fit=crop" },
-      { id: 16, name: "Parure Roberto Acier Inoxydable", category: "parures", price: 1600, oldPrice: 1800, image: "parure2.jpeg",zoom:1.15, position: "100% 75%", fallback: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=500&auto=format&fit=crop" },
-      { id: 18, name: "Parure عقدة الحب coeur Acier Inoxydable", category: "parures", price: 1500, oldPrice: 1800, image: "parure3.jpeg",zoom:1.0, position: "center 66%", fallback: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=500&auto=format&fit=crop" },
+      { id: 17, name: "Parure Tiffany And Co Acier Inoxydable", category: "parures", price: 3500, oldPrice: 4000, image: "parure1.jpg",zoom:1.0, position: "center 66%", fallback: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=500&auto=format&fit=crop" },
+      { id: 16, name: "Parure Roberto Acier Inoxydable", category: "parures", price: 1600, oldPrice: 1800, image: "parure2.jpg",zoom:1.15, position: "100% 75%", fallback: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=500&auto=format&fit=crop" },
+      { id: 18, name: "Parure عقدة الحب coeur Acier Inoxydable", category: "parures", price: 1500, oldPrice: 1800, image: "parure3.jpg",zoom:1.0, position: "center 66%", fallback: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=500&auto=format&fit=crop" },
 
       // PACKS
-      { id: 19, name: "Duo Cartier Acier Inoxydable", category: "packs", price: 1700, oldPrice: 2000, image: "pack1.jpeg",zoom:1.0, position: "60% 62%", fallback: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=500&auto=format&fit=crop" },
+      { id: 19, name: "Duo Cartier Acier Inoxydable", category: "packs", price: 1700, oldPrice: 2000, image: "pack1.jpg",zoom:1.0, position: "60% 62%", fallback: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=500&auto=format&fit=crop" },
 
       // BRACELETS
-      { id: 9, name: "Gourmette Tiffany Acier Inoxydable", category: "bracelets", price: 800, oldPrice: 1000, image: "bracelet1.jpeg",zoom:1.1, position: "center 60%", fallback: "https://images.unsplash.com/photo-1611591475878-3a1390f77977?w=500&auto=format&fit=crop" },
-      { id: 10, name: "يد يمنية roberto Acier Inoxydable", category: "bracelets", price: 900, oldPrice: 1100, image: "bracelet2.jpeg",zoom:1.0, position: "center 60%", fallback: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=500&auto=format&fit=crop" },
-      { id: 11, name: "يد يمنية christan dior Acier Inoxydable", category: "bracelets", price: 3100, oldPrice: null, image: "bracelet3.jpeg",zoom:1.0, position: "center 70%", fallback: "https://images.unsplash.com/photo-1611591475878-3a1390f77977?w=500&auto=format&fit=crop" },
-      { id: 12, name: "Gourmette Cartier Love Acier Inoxydable", category: "bracelets", price: 850, oldPrice: 1000, image: "bracelet4.jpeg",zoom:1.1, position: "center 65%", fallback: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=500&auto=format&fit=crop" },
+      { id: 9, name: "Gourmette Tiffany Acier Inoxydable", category: "bracelets", price: 800, oldPrice: 1000, image: "bracelet1.jpg",zoom:1.1, position: "center 60%", fallback: "https://images.unsplash.com/photo-1611591475878-3a1390f77977?w=500&auto=format&fit=crop" },
+      { id: 10, name: "يد يمنية roberto Acier Inoxydable", category: "bracelets", price: 900, oldPrice: 1100, image: "bracelet2.jpg",zoom:1.0, position: "center 60%", fallback: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=500&auto=format&fit=crop" },
+      { id: 11, name: "يد يمنية christan dior Acier Inoxydable", category: "bracelets", price: 3100, oldPrice: null, image: "bracelet3.jpg",zoom:1.0, position: "center 70%", fallback: "https://images.unsplash.com/photo-1611591475878-3a1390f77977?w=500&auto=format&fit=crop" },
+      { id: 12, name: "Gourmette Cartier Love Acier Inoxydable", category: "bracelets", price: 850, oldPrice: 1000, image: "bracelet4.jpg",zoom:1.1, position: "center 65%", fallback: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=500&auto=format&fit=crop" },
 
       // COLLIERS
-      { id: 5, name: "Collier Cartier Love Acier Inoxydable", category: "colliers", price: 900, oldPrice: 1200, image: "collier1.jpeg",zoom:1.0, position: "center 60%", fallback: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=500&auto=format&fit=crop" },
-      { id: 6, name: "Collier البجعة Acier Inoxydable", category: "colliers", price: 700, oldPrice: 1000, image: "collier2.jpeg",zoom:1.0, position: "center 55%", fallback: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=500&auto=format&fit=crop" },
+      { id: 5, name: "Collier Cartier Love Acier Inoxydable", category: "colliers", price: 900, oldPrice: 1200, image: "collier1.jpg",zoom:1.0, position: "center 60%", fallback: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=500&auto=format&fit=crop" },
+      { id: 6, name: "Collier البجعة Acier Inoxydable", category: "colliers", price: 700, oldPrice: 1000, image: "collier2.jpg",zoom:1.0, position: "center 55%", fallback: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=500&auto=format&fit=crop" },
 
       // BOUCLES D'OREILLES
-      { id: 20, name: "Boucles Acier Inoxydable Acier Inoxydable", category: "boucles", price: 500, oldPrice: 700, image: "boucle2.jpeg",zoom:1.5, position: "center 72%", fallback: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=500&auto=format&fit=crop" },
+      { id: 20, name: "Boucles Acier Inoxydable Acier Inoxydable", category: "boucles", price: 500, oldPrice: 700, image: "boucle2.jpg",zoom:1.5, position: "center 72%", fallback: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=500&auto=format&fit=crop" },
 
        // // BAGUES
       // { id: 1, name: "Bague Strass Papillon Gold", category: "bagues", price: 1200, oldPrice: 1600, image: "bague1.jpeg", imagePosition: "center 25%", fallback: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=500&auto=format&fit=crop" },
