@@ -77,55 +77,59 @@
     <span><strong>LIVRAISON GRATUITE</strong> disponible à l'<strong>USTHB (Bab Ezzouar)</strong> &amp; à l'école <strong>ESAA</strong> !</span>
   </div>
 
-  <header class="sticky top-0 z-30 bg-lym-cream/95 backdrop-blur-md border-b border-lym-nude/60 shadow-sm">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+  <header class="sticky top-0 z-30 bg-lym-cream/95 backdrop-blur-md border-b border-lym-nude/60 shadow-sm w-full overflow-hidden">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-2 w-full">
       
-      <div class="flex items-center gap-3">
-        <button onclick="toggleMobileMenu()" class="lg:hidden text-lym-brown text-xl p-1.5 rounded-lg hover:bg-lym-nude/30 cursor-pointer -ml-1" aria-label="Menu Mobile">
+      <!-- Gauche : Menu Hamburger + Logo & Titre -->
+      <div class="flex items-center gap-2 sm:gap-3 min-w-0">
+        <button onclick="toggleMobileMenu()" class="xl:hidden text-lym-brown text-xl p-2 rounded-lg hover:bg-lym-nude/30 cursor-pointer shrink-0" aria-label="Menu Mobile">
           <i class="fa-solid fa-bars-staggered"></i>
         </button>
 
-        <a href="#" class="flex items-center gap-3 cursor-pointer">
-          <img src="logo.jpeg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=200&auto=format&fit=crop';" alt="LYM accessories Logo" class="h-11 w-11 sm:h-13 sm:w-13 object-cover rounded-full border-2 border-lym-nude shadow-md shrink-0">
-          <div class="flex flex-col">
-            <span class="font-serif-title font-bold text-sm sm:text-xl tracking-wider uppercase text-lym-brown whitespace-nowrap leading-tight">LYM ACCESSORIES</span>
-            <span class="font-serif-title italic text-[11px] sm:text-xs text-lym-accent tracking-wider leading-none">little details, big impact</span>
+        <a href="#" class="flex items-center gap-2 sm:gap-3 cursor-pointer min-w-0">
+          <img src="logo.jpeg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=200&auto=format&fit=crop';" alt="LYM accessories Logo" class="h-10 w-10 sm:h-12 sm:w-12 object-cover rounded-full border-2 border-lym-nude shadow-md shrink-0">
+          <div class="flex flex-col min-w-0">
+            <span class="font-serif-title font-bold text-xs sm:text-base lg:text-xl tracking-wider uppercase text-lym-brown truncate leading-tight">LYM ACCESSORIES</span>
+            <span class="font-serif-title italic text-[10px] sm:text-xs text-lym-accent tracking-wider leading-none truncate">little details, big impact</span>
           </div>
         </a>
       </div>
 
-      <nav class="hidden lg:flex items-center space-x-3 text-[11px] font-semibold tracking-wider uppercase text-lym-brown">
-        <a href="#hero" class="hover:text-lym-accent transition-colors py-2 uppercase font-semibold cursor-pointer flex items-center gap-1"><i class="fa-solid fa-house"></i> Accueil</a>
-        <button onclick="scrollToCatalogAndFilter('parures')" class="hover:text-lym-accent transition-colors py-2 uppercase font-semibold cursor-pointer flex items-center gap-1 text-lym-accent font-bold"><i class="fa-solid fa-crown"></i> Parures</button>
-        <button onclick="scrollToCatalogAndFilter('packs')" class="hover:text-lym-accent transition-colors py-2 uppercase font-semibold cursor-pointer flex items-center gap-1"><i class="fa-solid fa-gift"></i> Packs</button>
-        <button onclick="scrollToCatalogAndFilter('bracelets')" class="hover:text-lym-accent transition-colors py-2 uppercase font-semibold cursor-pointer flex items-center gap-1"><i class="fa-solid fa-link"></i> Bracelets</button>
-        <button onclick="scrollToCatalogAndFilter('colliers')" class="hover:text-lym-accent transition-colors py-2 uppercase font-semibold cursor-pointer flex items-center gap-1"><i class="fa-solid fa-gem"></i> Colliers</button>
-        <button onclick="scrollToCatalogAndFilter('boucles')" class="hover:text-lym-accent transition-colors py-2 uppercase font-semibold cursor-pointer flex items-center gap-1"><i class="fa-solid fa-circle-dot"></i> Boucles</button>
-        <button onclick="scrollToCatalogAndFilter('bagues')" class="hover:text-lym-accent transition-colors py-2 uppercase font-semibold cursor-pointer flex items-center gap-1"><i class="fa-solid fa-ring"></i> Bagues</button>
-        <button onclick="scrollToCatalogAndFilter('montres')" class="hover:text-lym-accent transition-colors py-2 uppercase font-semibold cursor-pointer flex items-center gap-1"><i class="fa-solid fa-clock"></i> Montres</button>
+      <!-- Centre : Navigation Desktop (S'efface proprement sur les écrans moyens pour laisser place au hamburger) -->
+      <nav class="hidden xl:flex items-center space-x-1 text-[11px] font-semibold tracking-wider uppercase text-lym-brown shrink-0">
+        <a href="#hero" class="hover:text-lym-accent transition-colors py-2 px-1 uppercase font-semibold cursor-pointer flex items-center gap-1"><i class="fa-solid fa-house"></i> Accueil</a>
+        <button onclick="scrollToCatalogAndFilter('parures')" class="hover:text-lym-accent transition-colors py-2 px-1 uppercase font-semibold cursor-pointer flex items-center gap-1 text-lym-accent font-bold"><i class="fa-solid fa-crown"></i> Parures</button>
+        <button onclick="scrollToCatalogAndFilter('packs')" class="hover:text-lym-accent transition-colors py-2 px-1 uppercase font-semibold cursor-pointer flex items-center gap-1"><i class="fa-solid fa-gift"></i> Packs</button>
+        <button onclick="scrollToCatalogAndFilter('bracelets')" class="hover:text-lym-accent transition-colors py-2 px-1 uppercase font-semibold cursor-pointer flex items-center gap-1"><i class="fa-solid fa-link"></i> Bracelets</button>
+        <button onclick="scrollToCatalogAndFilter('colliers')" class="hover:text-lym-accent transition-colors py-2 px-1 uppercase font-semibold cursor-pointer flex items-center gap-1"><i class="fa-solid fa-gem"></i> Colliers</button>
+        <button onclick="scrollToCatalogAndFilter('boucles')" class="hover:text-lym-accent transition-colors py-2 px-1 uppercase font-semibold cursor-pointer flex items-center gap-1"><i class="fa-solid fa-circle-dot"></i> Boucles</button>
+        <button onclick="scrollToCatalogAndFilter('bagues')" class="hover:text-lym-accent transition-colors py-2 px-1 uppercase font-semibold cursor-pointer flex items-center gap-1"><i class="fa-solid fa-ring"></i> Bagues</button>
+        <button onclick="scrollToCatalogAndFilter('montres')" class="hover:text-lym-accent transition-colors py-2 px-1 uppercase font-semibold cursor-pointer flex items-center gap-1"><i class="fa-solid fa-clock"></i> Montres</button>
       </nav>
 
-      <div class="flex items-center gap-2 sm:gap-3">
+      <!-- Droite : Réseaux sociaux & Bouton Panier -->
+      <div class="flex items-center gap-1.5 sm:gap-2 shrink-0">
         <div class="hidden sm:flex items-center gap-1.5">
-          <a href="https://instagram.com/accessories.by.lym" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 px-3.5 py-1.5 bg-lym-nude/40 hover:bg-lym-nude text-lym-brown text-xs font-medium rounded-full border border-lym-nude cursor-pointer transition-colors" title="Instagram">
+          <a href="https://instagram.com/accessories.by.lym" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 px-3 py-1.5 bg-lym-nude/40 hover:bg-lym-nude text-lym-brown text-xs font-medium rounded-full border border-lym-nude cursor-pointer transition-colors shrink-0" title="Instagram">
             <i class="fa-brands fa-instagram text-sm text-pink-600"></i>
-            <span>Instagram</span>
+            <span class="hidden md:inline">Instagram</span>
           </a>
-          <a href="https://tiktok.com/@accessories.by.lym" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 px-3.5 py-1.5 bg-lym-nude/40 hover:bg-lym-nude text-lym-brown text-xs font-medium rounded-full border border-lym-nude cursor-pointer transition-colors" title="TikTok">
+          <a href="https://tiktok.com/@accessories.by.lym" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 px-3 py-1.5 bg-lym-nude/40 hover:bg-lym-nude text-lym-brown text-xs font-medium rounded-full border border-lym-nude cursor-pointer transition-colors shrink-0" title="TikTok">
             <i class="fa-brands fa-tiktok text-sm text-black"></i>
-            <span>TikTok</span>
+            <span class="hidden md:inline">TikTok</span>
           </a>
         </div>
 
-        <button id="open-cart-btn" onclick="openCart()" class="relative p-2.5 bg-lym-nude/60 hover:bg-lym-nude text-lym-brown rounded-full transition-all duration-300 shadow-sm flex items-center justify-center cursor-pointer border border-lym-nude/40" aria-label="Voir le Panier">
-          <i class="fa-solid fa-bag-shopping text-xl"></i>
+        <button id="open-cart-btn" onclick="openCart()" class="relative p-2.5 bg-lym-nude/60 hover:bg-lym-nude text-lym-brown rounded-full transition-all duration-300 shadow-sm flex items-center justify-center cursor-pointer border border-lym-nude/40 shrink-0" aria-label="Voir le Panier">
+          <i class="fa-solid fa-bag-shopping text-lg sm:text-xl"></i>
           <span id="cart-counter" class="absolute -top-1 -right-1 bg-lym-brown text-lym-nude text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center border-2 border-white">0</span>
         </button>
       </div>
 
     </div>
 
-    <div id="mobile-menu" class="hidden lg:hidden bg-lym-softNude border-b border-lym-nude/60 px-6 py-4 space-y-3">
+    <!-- Menu Déroulant -->
+    <div id="mobile-menu" class="hidden xl:hidden bg-lym-softNude border-b border-lym-nude/60 px-6 py-4 space-y-3">
       <div class="flex sm:hidden items-center justify-around pb-3 border-b border-lym-nude/30 gap-2">
         <a href="https://instagram.com/accessories.by.lym" target="_blank" class="flex-1 text-center py-1.5 bg-lym-nude/40 text-xs font-semibold rounded-lg border border-lym-nude"><i class="fa-brands fa-instagram text-pink-600"></i> Instagram</a>
         <a href="https://tiktok.com/@accessories.by.lym" target="_blank" class="flex-1 text-center py-1.5 bg-lym-nude/40 text-xs font-semibold rounded-lg border border-lym-nude"><i class="fa-brands fa-tiktok"></i> TikTok</a>
